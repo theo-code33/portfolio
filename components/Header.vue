@@ -7,8 +7,8 @@
             <nav class="top_header_nav">
                 <ul>
                     <li><NuxtLink to="/">Home</NuxtLink></li>
-                    <li><NuxtLink to="/">Projets</NuxtLink></li>
-                    <li><NuxtLink to="/">Contact</NuxtLink></li>
+                    <li><NuxtLink to="/projets">Projets</NuxtLink></li>
+                    <li><NuxtLink to="/contact">Contact</NuxtLink></li>
                 </ul>
             </nav>
         </div>
@@ -56,12 +56,14 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 140px 0 140px;
+    // padding: 50px 0 0 0;
     overflow: hidden;
     position: relative;
 
     .top_header{
-        width: 100%;
+        width: calc(100% - 140px);
+        margin: 50px auto 100px;
+        max-width: 1600px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -90,16 +92,7 @@ header{
                     color: #FFF;
                     font-weight: lighter;
                     position: relative;
-
-                    // &::after{
-                    //     content: '';
-                    //     width: 100%;
-                    //     border: 1px solid #000;
-                    //     position: absolute;
-                    //     bottom: -10px;
-                    //     left: 0;
-                    //     // transform: rotate(90deg);
-                    // }
+                    
                     &::before{
                         content: '';
                         width: 100%;
@@ -129,6 +122,9 @@ header{
         align-items: center;
         justify-content: space-between;
         position: relative;
+        width: calc(100% - 140px);
+        margin: auto;
+        max-width: 1600px;
 
         &_title{
             h1{
