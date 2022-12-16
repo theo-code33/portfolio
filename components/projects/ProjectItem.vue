@@ -69,6 +69,11 @@ export default {
                 font-size: 40px;
                 font-weight: 600;
             }
+            p{
+                font-size: 18px;
+                font-weight: 100;
+                line-height: 24px;
+            }
             .tags{
                 span{
                     font-size: 18px;
@@ -145,6 +150,41 @@ export default {
                 max-height: 400px;
                 border-radius: 10px;
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .project-item{
+        // width: calc(100% - 100px) !important;
+        margin: auto;
+        .project-item-wrapper{
+            flex-direction: column;
+    
+            .left-side{
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+    
+            .right-side{
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .project-item{
+        width: 100% !important;
+        .left-side{
+            h2{
+                font-size: 30px;
+            }
+            .tags{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
             }
         }
     }

@@ -64,7 +64,13 @@ export default {
             font-size: 16px;
             font-weight: 400;
             color: rgba($color: #000000, $alpha: 0.6);
+            line-height: 22px;
         }
+    }
+}
+@media all and (max-width: 767px) {
+    .testimonial-item{
+        padding: 30px 30px;
     }
 }
 </style>

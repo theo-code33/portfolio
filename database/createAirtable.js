@@ -11,7 +11,7 @@ export default async function createAirtable(datas){
                     "subject": datas.subject,
                     "message": datas.message,
                     "sendingAt": Date.now(),
-                    "status": "En attente de réponse",
+                    "status": "À contacter",
                     "Devis": "Non proposé"
                 }
             }

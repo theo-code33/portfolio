@@ -7,7 +7,7 @@
             <br/>
             Je suis à votre disposition pour répondre à tout type de projets de création de sites internet. Que ce soit un site vitrine, un site e-commerce ou même un développement spécifique je ferai mon maximum et repousserai mes limites pour répondre au mieux à votre besoin.
             </p>
-            <NuxtLink to="/">En découvrir plus</NuxtLink>
+            <!-- <NuxtLink to="/">En découvrir plus</NuxtLink> -->
         </div>
         <div class="right-side">
             <CardService :img="'/image.png'" :alt="'cooool'" :description="'Je suis Théo Gillet. Développeur Web Freelance et passionné de développement web, je passe le plus clair de mon temps libre à coder pour m’améliorer et pouvoir vous proposer la meilleure solution à votre besoin.'" :title="'Création et refonte'"/>
@@ -50,6 +50,7 @@ export default {
             margin: 50px 0;
             color: rgba($color: #000, $alpha: 0.6);
             font-weight: lighter;
+            line-height: 30px;
         }
         a{
             font-size: 22px;
@@ -91,6 +92,41 @@ export default {
         width: calc(100% - 100px);
         padding: 80px 0;
         flex-direction: column;
+        align-items: center;
+
+        .left-side{
+            width: 100%;
+            margin: 0;
+        }
+        .right-side{
+            width: 100%;
+            margin: 50px 0 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .who{
+        width: calc(100% - 50px);
+
+        .left-side{
+            h2{
+                font-size: 40px;
+            }
+            p{
+                margin: 30px 0;
+            }
+        }
+        .right-side{
+            flex-direction: column;
+            margin-top: 30px;
+
+            .card-service{
+                width: 100%;
+            }
+        }
     }
 }
 </style>

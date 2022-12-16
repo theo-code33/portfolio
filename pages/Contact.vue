@@ -132,4 +132,56 @@ export default {
         }
     }
 }
+@media all and (max-width: 1024px) {
+  .container-contact{
+    width: calc(100% - 100px);
+    flex-direction: column;
+
+    .left-side{
+      width: 100% !important;
+      margin-bottom: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .img-profil{
+        img{
+          width: 250px !important;
+          height: 250px !important;
+        }
+      }
+      .contact-link{
+        margin-bottom: 0 !important;
+      }
+    }
+
+    .right-side{
+      width: 100% !important;
+    }
+  }
+}
+@media all and (max-width: 767px) {
+    .container-contact{
+        width: calc(100% - 50px);
+        .left-side{
+            flex-direction: column;
+            align-items: flex-start;
+
+            .img-profil{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .social-section{
+                margin-top: 30px;
+            }
+        }
+        .right-side{
+            h2{
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
 </style>

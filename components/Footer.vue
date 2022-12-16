@@ -275,4 +275,55 @@ footer{
         }
     }
 }
+
+@media all and (max-width: 1024px) {
+    .contact-footer{
+        align-items: flex-end !important;
+        &-img{
+            height: 100% !important;
+        }
+        &-title{
+            p{
+                align-items: flex-start !important;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 40px !important;
+                
+                a{
+                    font-size: 40px !important;
+                    margin-left: 0 !important;
+                    svg{
+                        font-size: 40px !important;
+                        height: 100px;
+                        margin-top: 25px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    footer{
+        .contact-footer{
+            .contact-footer-title{
+                p{
+                    font-size: 30px !important;
+                    a{
+                        font-size: 30px !important;
+
+                        .text{
+                            -webkit-text-stroke: 1px #FFF;
+                        }
+                    }
+                }
+                svg{
+                    display: none;
+                }
+            }
+        }
+        .link-footer{
+            width: calc(100% - 100px);
+        }
+    }
+}
 </style>

@@ -66,6 +66,22 @@ export default {
             p{
                 font-size: 18px;
                 font-weight: lighter;
+                line-height: 24px;
+            }
+        }
+    }
+    @media all and (max-width: 1024px) {
+        .card-service{
+            width: 48%
+        }
+    }
+    @media all and (max-width: 767px) {
+        .card-service{
+            width: 100%;
+            .top-card{
+                h2{
+                    margin-left: 30px;
+                }
             }
         }
     }

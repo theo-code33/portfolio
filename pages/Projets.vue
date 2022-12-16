@@ -88,9 +88,26 @@ export default {
         }
     }
     .content-project{
+        width: calc(100% - 280px);
         max-width: 1600px;
         margin: auto;
         padding: 70px 0 100px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #projets{
+        .content-project{
+            width: calc(100% - 100px);
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    #projets{
+        .content-project{
+            width: calc(100% - 50px);
+        }
     }
 }
 </style>

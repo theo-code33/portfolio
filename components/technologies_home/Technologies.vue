@@ -88,9 +88,34 @@ export default {
             color: rgba($color: #000, $alpha: 0.6);
             font-weight: lighter;
             width: 40%;
+            line-height: 30px;
         }
 
     }
+}
 
+@media all and (max-width: 1024px) {
+    .technologies{
+        .text-technologies{
+            width: calc(100% - 100px);
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .technologies{
+        .text-technologies{
+            width: calc(100% - 50px);
+
+            h2{
+                font-size: 30px;
+            }
+            p{
+                margin: 30px 0;
+            }
+        }
+    }
 }
 </style>

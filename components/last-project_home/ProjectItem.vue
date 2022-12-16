@@ -141,4 +141,28 @@ export default {
             }
         }
     }
+    @media all and (max-width: 767px) {
+        .project-item-container{
+            height: 110px;
+            h2{
+                font-size: 40px !important;
+                margin-bottom: 10px;
+            }
+            .img-hover{
+                display: none;
+            }
+            .right{
+                display: none;
+            }
+            .container-tags{                
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+            .left{
+                width: 100%;
+            }
+        }
+    }
 </style>

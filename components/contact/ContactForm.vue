@@ -205,4 +205,21 @@ export default {
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .contact-form{
+    input{
+      font-size: 20px !important;
+    }
+    textarea{
+      font-size: 20px !important;
+    }
+    select{
+      font-size: 20px !important;
+    }
+    button{
+      width: 100%;
+    }
+  }
+}
 </style>

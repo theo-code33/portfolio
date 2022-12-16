@@ -35,4 +35,13 @@ export default {
     font-family: 'Mundial', sans-serif;
     -webkit-text-stroke: 2px #000;
 }
+@media all and (max-width: 767px) {
+    .title-techologie{
+        font-size: 60px;
+    }
+    .title-techologie-border{
+        font-size: 60px;
+
+    }
+}
 </style>

@@ -69,13 +69,19 @@ export default {
       const swiper = new Swiper('.swiper', {
       direction: 'horizontal',
       loop: false,
-      slidesPerView: 2.5,
+      slidesPerView: 1,
       spaceBetween: 30,
       modules: [Navigation],
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev'
-      // }
+      breakpoints: {
+        768: {
+          slidesPerView: 1.5,
+          spaceBetween: 30,
+        },
+        1025: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
+      }
     })
     }
 }
@@ -102,6 +108,30 @@ export default {
     .swiper{
       width: calc(100% - 280px);
       overflow: visible;
+    }
+  }
+
+  @media all and (max-width: 1024px){
+    .testimonials-container{
+      .title-testimonial-container{
+        width: calc(100% - 100px);
+      }
+      .swiper{
+        width: calc(100% - 80px);
+      }
+    }
+  }
+  @media all and (max-width: 767px){
+    .testimonials-container{
+      .title-testimonial-container{
+        width: calc(100% - 50px);
+        h2{
+          font-size: 30px;
+        }
+      }
+      .swiper{
+        width: calc(100% - 40px);
+      }
     }
   }
 </style>

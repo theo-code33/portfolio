@@ -1,7 +1,7 @@
 <template>
     <section class="last-project">
         <div class="left-side">
-            <h2>Mes <br/>Derniers projets</h2>
+            <h2>Mes <br v-if="widthDevice > 1024"/>Derniers projets</h2>
             <img src="@/static/memoji.png" alt="Memoji derrière un ordinateur">
         </div>
         <div class="right-side">
@@ -14,11 +14,17 @@
 </template>
 
 <script>
+import { width } from 'dom7';
 import ProjectItem from './ProjectItem.vue'
 export default {
     name: "LastProject",
     components: { 
         ProjectItem 
+    },
+    data(){
+        return{
+            widthDevice: window.innerWidth
+        }
     } 
 }
 </script>
@@ -54,6 +60,43 @@ export default {
         }
         .last-item{
             margin-top: 50px;
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .last-project{
+        width: calc(100% - 100px);
+        padding: 100px 0;
+        flex-direction: column;
+
+        .left-side{
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .right-side{
+            width: 100%;
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .last-project{
+        width: calc(100% - 50px);
+        .left-side{
+            h2{
+                font-size: 30px;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 }
