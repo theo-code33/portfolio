@@ -5,7 +5,8 @@
                 <img :src="testimonial.img" :alt="testimonial.name">
             </div>
             <div class="testimonial__content">
-                <p class="testimonial__content__name">{{ testimonial.name }}</p>
+                <a v-if="testimonial.link !== ''" :href="testimonial.link" target="_blank" class="testimonial__content__name">{{ testimonial.name }}</a>
+                <p v-else  class="testimonial__content__name">{{ testimonial.name }}</p>
                 <span class="testimonial__content__job">{{ testimonial.job }}</span>
             </div>
         </div>
@@ -27,8 +28,7 @@ export default {
 </script>
 <style lang="scss">
 .testimonial-item{
-    // width: 100%;
-    height: fit-content;
+    height: 100%;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px 50px;
@@ -47,16 +47,27 @@ export default {
             background-color: red;
             display: block;
             margin-right: 20px;
+            object-fit: cover;
         }
-        p{
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0 0 5px 0;
-        }
-        span{
-            font-size: 14px;
-            font-weight: 400;
-            color: rgba($color: #000000, $alpha: 0.4);
+        .testimonial__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            
+            &__name{
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0 0 5px 0;
+                text-decoration: none;
+                color: #000000;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba($color: #000000, $alpha: 0.4);
+            }
         }
     }
     &-bottom{

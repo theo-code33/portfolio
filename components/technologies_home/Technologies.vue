@@ -2,7 +2,13 @@
     <section class="technologies">
         <div class="text-technologies">
             <h2>Les technologies que je maîtrise</h2>
-            <p>Je suis Théo Gillet. Développeur Web Freelance et passionné de développement web, je passe le plus clair de mon temps libre à coder pour m’améliorer et pouvoir vous proposer la meilleure solution à votre besoin. Je suis Théo Gillet. Développeur Web Freelance et passionné de développement web, je passe le plus clair de mon temps libre à coder pour m’améliorer et pouvoir vous proposer la meilleure solution à votre</p>
+            <p>Vous l’aurez compris, je suis passionné par le développement web d’où mon activité en Freelance. Je vous présente un panel des différentes technos que je maîtrise, vous trouverez sûrement chaussure à votre pied !</p>
+            <ul>
+                <li>CMS pour vos Landing Page</li>
+                <li>Prestashop pour vos sites E-Commerce</li>
+                <li>Framwork tels que React ou VueJS pour vos Web Applications</li>
+            </ul>
+            <p class="last-p">Contactez-moi et on en parle ensemble !</p>
         </div>
         
         <Frameworks class="frameworks-component"/>
@@ -80,15 +86,28 @@ export default {
         h2{
             font-size: 40px;
             font-weight: 600;
-            margin: 0;
+            margin: 0 0 50px;
         }
         p{
             font-size: 20px;
-            margin: 50px 0;
+            margin: 0;
             color: rgba($color: #000, $alpha: 0.6);
             font-weight: lighter;
             width: 40%;
             line-height: 30px;
+        }
+        ul{
+            margin: 15px 0;
+            li{
+                font-family: 'Mundial', sans-serif;
+                font-size: 20px;
+                font-weight: lighter;
+                color: rgba($color: #000, $alpha: 0.6);
+                line-height: 30px;
+            }
+        }
+        .last-p{
+            margin: 15px 0 50px;
         }
 
     }
@@ -112,8 +131,8 @@ export default {
             h2{
                 font-size: 30px;
             }
-            p{
-                margin: 30px 0;
+            .last-p{
+                margin: 15px 0 30px;
             }
         }
     }

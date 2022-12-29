@@ -27,39 +27,18 @@ export default {
     data(){
       return{
         testimonials: [{
-          name: 'Jean',
-          job: 'Développeur',
-
-
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquam, nisl nisl aliquam nisl, eu aliquam nisl nisl euismod.'
+          name: 'Adel Sanaa',
+          job: 'Creative Developer',
+          img: '/adel-sanaa.png',
+          text: 'Au travers de nos collaborations au sein de l’Agence THRIVE, sa pédagogie, son enthousiasme et son sérieux ont clairement su me marquer. Aucun doute, Théo m’a été un partenaire de travail sérieux et compréhensif.',
+          link: 'https://www.linkedin.com/in/adelsanaa'
         },
         {
-          name: 'Jean',
-
-          alt: 'Emoji qui fait coucou',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquam, nisl nisl aliquam nisl, eu aliquam nisl nisl euismod.'
-        },
-        {
-          name: 'Jean',
-          job: 'Développeur',
-
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquam, nisl nisl aliquam nisl, eu aliquam nisl nisl euismod.'
-        },
-        {
-          name: 'Jean',
-          job: 'Développeur',
-          
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquam, nisl nisl aliquam nisl, eu aliquam nisl nisl euismod.'
-        },
-        {
-          name: 'Jean',
-          job: 'Développeur',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquam, nisl nisl aliquam nisl, eu aliquam nisl nisl euismod.'
-        },
-        {
-          name: 'Jean',
-          job: 'Développeur',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquam, nisl nisl aliquam nisl, eu aliquam nisl nisl euismod.'
+          name: 'Pierre Marsanne',
+          job: "Co-fondateur de l'agence THRIVE",
+          img: '/pierre-marsanne.png',
+          text: "Je travail avec Théo depuis presque deux ans sur différents projets web (Wordpress et Prestashop en particulier). Théo est un développeur sérieux, organisé et tellement passionné par l'informatique. Le rendu est toujours conforme à nos attentes et les délais sont généralement bien respectés. Théo s'est anticiper nos demandes et est toujours disponible pour échanger lorsque nous rencontrons une problématique dans un projet. C'est un réel plaisir de travailler ensemble. Je recommande vivement Théo pour son excellent investissement.",
+          link: "https://www.linkedin.com/in/pierre-marsanne-consultant-web/"
         }]
       }
     },
@@ -72,6 +51,7 @@ export default {
       slidesPerView: 1,
       spaceBetween: 30,
       modules: [Navigation],
+      autoHeight: true,
       breakpoints: {
         768: {
           slidesPerView: 1.5,
@@ -108,6 +88,17 @@ export default {
     .swiper{
       width: calc(100% - 280px);
       overflow: visible;
+      .swiper-wrapper{
+          align-items: stretch !important;
+
+          .swiper-slide{
+            height: 100% !important;
+
+            .slider-content{
+              height: 100%;
+            }
+          }
+        }
     }
   }
 

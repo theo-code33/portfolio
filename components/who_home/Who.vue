@@ -3,15 +3,21 @@
         <div class="left-side">
             <h2>Qui suis-je ?</h2>
             <p>
-            Je suis Théo Gillet. Développeur Web Freelance et passionné de développement web, je passe le plus clair de mon temps libre à coder pour m’améliorer et pouvoir vous proposer la meilleure solution à votre besoin.<br/>
-            <br/>
-            Je suis à votre disposition pour répondre à tout type de projets de création de sites internet. Que ce soit un site vitrine, un site e-commerce ou même un développement spécifique je ferai mon maximum et repousserai mes limites pour répondre au mieux à votre besoin.
+                Hello. Moi, c’est Théo ! Une petite présentation s’impose non ?
+                Pour faire court, je suis développeur web front end, mais je tends à devenir full Stack JavaScript. Vous êtes au bon endroit si
+                vous cherchez quelqu’un pour créer le site de vos rêves. Vous demandez, je réalise !
+                <br/>
+                <br/>
+                Besoin d’un site vitrine ? C’est ok, je m’y mets. Vous voulez étendre votre activité et vous avez besoin d’un beau site ecommerce ? Let’s go ! En bref, je prends toutes vos demandes et mets tout en œuvre pour produire votre projet dans les
+                meilleurs délais.
+                <br/>
+                <br/>
+                Alors, on commence quand ?
             </p>
-            <!-- <NuxtLink to="/">En découvrir plus</NuxtLink> -->
         </div>
         <div class="right-side">
-            <CardService :img="'/image.png'" :alt="'cooool'" :description="'Je suis Théo Gillet. Développeur Web Freelance et passionné de développement web, je passe le plus clair de mon temps libre à coder pour m’améliorer et pouvoir vous proposer la meilleure solution à votre besoin.'" :title="'Création et refonte'"/>
-            <CardService :img="'/image.png'" :alt="'cooool'" :description="'Je suis Théo Gillet. Développeur Web Freelance et passionné de développement web, je passe le plus clair de mon temps libre à coder pour m’améliorer et pouvoir vous proposer la meilleure solution à votre besoin.'" :title="'Maintenance et suivi'"/>
+            <CardService :img="'/logo-creation.svg'" :alt="'logo création et refonte'" :description="cardServiceText1" :title="'Création et refonte'"/>
+            <CardService :img="'/logo-maintenance.svg'" :alt="'logo maintenance et suivi'" :description="cardServiceText2" :title="'Maintenance et suivi'"/>
         </div>
     </section>
 </template>
@@ -22,7 +28,13 @@ export default {
     name: 'Who',
     components: {
     CardService,
-}
+    },
+    data() {
+    return {
+        cardServiceText1: "Envie de créer un site web tout neuf ou de redonner un coup de boost à votre site actuel ? Vous êtes au bon endroit, bien joué ! Mon but est de travailler avec vous et de comprendre vos besoins et vos envies !",
+        cardServiceText2: "Votre site est terminé et vous voulez être accompagné sur la suite ? Re-bonjour, c’est aussi dans mes compétences. Je travaille main dans la main avec vous pour vous proposer un suivi complet et total !"
+    };
+    }
 }
 </script>
 
