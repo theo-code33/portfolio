@@ -8,6 +8,7 @@
                 </div>
                 <span class="collaboration" v-if="collaboration">Réalisé en collaboration avec <a :href="collaboration.link">{{ collaboration.name }}</a></span>
                 <p>{{ description }}</p>
+                <p class="last-sentence">{{ lastSentence }}</p>
                 <a class="link-website" :href="link" target="_blank">Visiter le site</a>
             </div>
             <div class="right-side">
@@ -32,6 +33,10 @@ export default {
             required: true
         },
         description: {
+            type: String,
+            required: true
+        },
+        lastSentence: {
             type: String,
             required: true
         },
@@ -73,6 +78,9 @@ export default {
                 font-size: 18px;
                 font-weight: 100;
                 line-height: 24px;
+            }
+            .last-sentence{
+                margin-top: 15px
             }
             .tags{
                 span{
