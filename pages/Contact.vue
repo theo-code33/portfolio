@@ -4,7 +4,7 @@
         <section class="container-contact">
             <div class="left-side">
                 <div class="img-profil">
-                    <img src="/ESD_b1_DW_07.jpg" alt="">
+                    <img src="/Theo-NB-3737px.jpg" alt="">
                 </div>
                 <div class="contact-link">
                     <p class="description-section">Mes contacts</p>
