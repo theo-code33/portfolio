@@ -2,7 +2,7 @@
     <section id="projets">
         <Header :title-main="'Mes Projets'" :title-stroke="''" :img="'/memoji.png'" :alt="'Memoji qui travaille'"/>
         <section class="content-project">
-            <ProjectItem v-for="project in projects" :key="project.id" :id="project.id" :title="project.title" :tags="project.tags" :image="project.image" :description="project.description" :collaboration="project.collaboration" :link="project.link"/>
+            <ProjectItem v-for="project in projects" :key="project.id" :id="project.id" :title="project.title" :tags="project.tags" :image="project.image" :description="project.description" :lastSentence="project.lastSentence" :collaboration="project.collaboration" :link="project.link"/>
         </section>
         <Footer />
     </section>
@@ -28,7 +28,8 @@ export default {
                     title: 'Orchestre Parfum',
                     tags: ['Prestashop','PHP','Smarty','HTML','SCSS','Javascript'],
                     image: '/mockup-ochestre-parfum.png',
-                    description: 'Site vitrine pour l\'Orchestre Parfum, un orchestre de musique classique. Le site est réalisé avec Prestashop, et est responsive.',
+                    description: 'Ce site e-commerce international est spécialisé dans la création de parfums en collaboration avec des musiciens pour allier notes parfumées et musicales. Sympa non ? Ce site a été développé via Prestashop. Le plus ? Il est totalement responsive ! Vous trouverez sur le site La Console. Mais qu’est-ce que c’est ? Et bien, c’est ce qui vous permettra de trouver le parfum parfait pour vous en fonction des différents champs choisis.',
+                    lastSentence: 'À vous de tester !',
                     collaboration: {
                         name: 'Agence THRIVE',
                         link: 'https://agencethrive.fr/'
@@ -41,7 +42,8 @@ export default {
                     title: 'Thalia Patrimoine',
                     tags: ['Wordpress','PHP','Javascript','HTML','SCSS','Swiper JS'],
                     image: '/mockup-thalia-patrimoine.png',
-                    description: 'Site vitrine pour Thalia Patrimoine, une agence immobilière. Le site est réalisé avec Wordpress, et est responsive.',
+                    description: 'Thalia Patrimoine, c’est LE site de gestion de patrimoine, d’immobilier et d’assurance. Réalisé avec Wordpress, ce site vitrine est entièrement responsive. Tout a été mis en place pour lui permettre de gérer tout le flux externe des annonces ! Autre plus de ce nouveau site : la possibilité de calculer ses mensualités directement en ligne.',
+                    lastSentence: 'Allez faire un tour dessus pour le découvrir !',
                     collaboration: {
                         name: 'Agence THRIVE',
                         link: 'https://agencethrive.fr/'
@@ -54,7 +56,8 @@ export default {
                     title: 'Mon Portfolio',
                     tags: ['Vue JS','Javascript','HTML','SCSS','GSAP', 'Swiper JS'],
                     image: '/mockup-portfolio.png',
-                    description: 'Mon portfolio, réalisé avec Vue JS, et est responsive.',
+                    description: 'Ici, c’est mon propre projet personnel ! Pour réaliser mon portfolio, j’ai travaillé avec plusieurs technologies différentes : nuxtJS, GSAP, Airtable. Il évolue constamment, alors gardez l’œil ouvert pour repérer tous les nouveaux changements !',
+                    lastSentence: 'Petit plus pratique : le formulaire de contact est connecté directement avec Airtable, impossible pour moi de vous rater !',
                     link: '/'
                 }
             ]
