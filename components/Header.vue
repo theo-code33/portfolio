@@ -12,14 +12,14 @@
                 </ul>
             </nav>
             <nav v-else>
-                <button  @click.prevent="openMenu()" class="openMenuButton">
+                <button  @click.prevent="openMenu()" class="openMenuButton" aria-label="Ouvrir le menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFF" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
                 </button>
                 <div class="burger-menu">
                     <div class="close-container">
-                        <button @click.prevent="closeMenu()">
+                        <button @click.prevent="closeMenu()" aria-label="Fermer le menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                             </svg>
@@ -30,10 +30,10 @@
                         <li><NuxtLink to="/projets">Projets</NuxtLink></li>
                         <li><NuxtLink to="/contact">Contact</NuxtLink></li>
                     </ul>
-                    <ul class="contact-link">
+                    <div class="contact-link">
                         <a href="tel:0614590394">06 14 59 03 94</a>
                         <a href="mailto:gillettheo1@gmail.com">gillettheo1@gmail.com</a>
-                    </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -43,7 +43,7 @@
             </div>
         </div>
             <div class="bottom_header_img">
-                <img :src="img" :alt="alt">
+                <nuxt-img :src="img" :alt="alt" format="webp" />
             </div>
     </header>
 </template>

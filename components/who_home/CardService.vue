@@ -1,7 +1,11 @@
 <template>
     <div class="card-service">
         <div class="top-card">
-            <img :src="img" :alt="alt">
+            <nuxt-img
+                :src="img"
+                :alt="alt"
+                format="webp"
+            />
             <h2>{{ title }}</h2>
         </div>
         <div class="bottom-card">

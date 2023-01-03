@@ -6,7 +6,7 @@
             <ul>
                 <li>CMS pour vos Landing Page</li>
                 <li>Prestashop pour vos sites E-Commerce</li>
-                <li>Framwork tels que React ou VueJS pour vos Web Applications</li>
+                <li>Framework tels que React ou VueJS pour vos Web Applications</li>
             </ul>
             <p class="last-p">Contactez-moi et on en parle ensemble !</p>
         </div>

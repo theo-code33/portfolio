@@ -13,7 +13,12 @@
             </div>
             <div class="right-side">
                 <a :href="link" target="_blank">
-                    <img :src="image" :alt='"Mockup "+title' loading="lazy">
+                    <nuxt-img
+                        :src="image"
+                        :alt='"Mockup "+title'
+                        loading="lazy"
+                        format="webp"
+                    />
                 </a>
             </div>
         </div>

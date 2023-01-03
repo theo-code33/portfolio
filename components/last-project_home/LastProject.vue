@@ -2,7 +2,11 @@
     <section class="last-project">
         <div class="left-side">
             <h2>Mes <br v-if="widthDevice > 1024"/>Derniers projets</h2>
-            <img src="@/static/memoji.png" alt="Memoji derrière un ordinateur">
+            <nuxt-img
+                src="/memoji.png"
+                format="webp"
+                alt="Memoji derrière un ordinateur"
+            />
         </div>
         <div class="right-side">
             <ProjectItem :title="'Orchestre Parfum'" :tags="['Prestashop','PHP','Smarty','HTML','SCSS','Javascript']" :link="'/projets#1'" :image="'/mockup-ochestre-parfum.png'"/>
@@ -14,7 +18,6 @@
 </template>
 
 <script>
-import { width } from 'dom7';
 import ProjectItem from './ProjectItem.vue'
 export default {
     name: "LastProject",

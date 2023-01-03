@@ -2,7 +2,11 @@
     <div class="testimonial-item">
         <div class="testimonial-item-top">
             <div class="testimonial__img">
-                <img :src="testimonial.img" :alt="testimonial.name">
+                <nuxt-img
+                    :src="testimonial.img"
+                    format="webp"
+                    :alt="testimonial.name"
+                />
             </div>
             <div class="testimonial__content">
                 <a v-if="testimonial.link !== ''" :href="testimonial.link" target="_blank" class="testimonial__content__name">{{ testimonial.name }}</a>

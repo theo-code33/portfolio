@@ -2,7 +2,11 @@
     <footer>
         <div v-if="contact" class="contact-footer">
             <div class="contact-footer-img">
-                <img src="/image_2.png" alt="Logo Call Me">
+                <nuxt-img
+                    src="/image_2.png"
+                    format="webp"
+                    alt="Logo Call Me"
+                />
             </div>
             <div class="contact-footer-title">
                 <p>
@@ -22,17 +26,29 @@
             <ul class="social-media">
                 <li>
                     <a href="https://www.linkedin.com/in/theo-gillet/" target="_blank">
-                        <img src="../static/LinkedIn_logo_initials.png" alt="Logo Linkedin">
+                        <nuxt-img
+                            src="/LinkedIn_logo_initials.png"
+                            format="webp"
+                            alt="Logo Linkedin"
+                        />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.malt.fr/profile/theogillet" target="_blank">
-                        <img src="../static/malt-logo.png" alt="Logo Malt">
+                        <nuxt-img
+                            src="/malt-logo.png"
+                            format="webp"
+                            alt="Logo Malt"
+                        />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/theo-code33" target="_blank">
-                        <img src="/Font_Awesome_5_brands_github.svg.png" alt="Logo GitHub">
+                        <nuxt-img
+                            src="/Font_Awesome_5_brands_github.svg.png"
+                            format="webp"
+                            alt="Logo GitHub"
+                        />
                     </a>
                 </li>
             </ul>
@@ -44,7 +60,7 @@
         </div>
         <div class="legal-link">
             <ul>
-                <li><NuxtLink to="/">Site Map</NuxtLink></li>
+                <li><NuxtLink to="/site-map.xml">Site Map</NuxtLink></li>
                 <li><NuxtLink to="/">Mentions Légales</NuxtLink></li>
             </ul>
         </div>
