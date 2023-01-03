@@ -69,8 +69,9 @@ export default {
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: '' },
-                { name: 'format-detection', content: 'telephone=no' }
+                { hid: 'description', name: 'description', content: 'Vous cherchez un développeur web freelance pour votre projet web ? Alors vous êtes au bonne endroit ! Voici mes différents projets réalisé qui pourront vous inspirer.' },
+                { name: 'format-detection', content: 'telephone=no' },
+                { hid: 'robots', name: 'robots', content: 'index, follow' }
             ],
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/memoji.png' }

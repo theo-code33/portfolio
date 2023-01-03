@@ -4,7 +4,12 @@
         <section class="container-contact">
             <div class="left-side">
                 <div class="img-profil">
-                    <img src="/Theo-NB-3737px.jpg" alt="">
+                    <nuxt-img
+                        src="/Theo-NB-3737px.jpg"
+                        alt="Photo de profil"
+                        format="webp"
+                        loading="lazy"
+                    />
                 </div>
                 <div class="contact-link">
                     <p class="description-section">Mes contacts</p>
@@ -46,8 +51,9 @@ export default {
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: '' },
-                { name: 'format-detection', content: 'telephone=no' }
+                { hid: 'description', name: 'description', content: "À la recherche d'un développeur wed freelance pour réalisé votre site web ? C'est parfait, vous êtes au bonne endroit ! Contactez moi via mon formulaire de contact et on en discutera." },
+                { name: 'format-detection', content: 'telephone=no' },
+                { hid: 'robots', name: 'robots', content: 'index, follow' }
             ],
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/image_2.png' }
