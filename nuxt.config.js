@@ -11,7 +11,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Home - Théo Gillet - Développeur Front-End',
+    title: 'Théo Gillet - Développeur Web Front-End basé à Bordeaux (33)',
     htmlAttrs: {
       lang: 'fr'
     },
