@@ -26,20 +26,28 @@ export default {
     name: "Testimonials",
     data(){
       return{
-        testimonials: [{
-          name: 'Adel Sanaa',
-          job: 'Creative Developer',
-          img: '/adel-sanaa.png',
-          text: 'Au travers de nos collaborations au sein de l’Agence THRIVE, sa pédagogie, son enthousiasme et son sérieux ont clairement su me marquer. Aucun doute, Théo m’a été un partenaire de travail sérieux et compréhensif.',
-          link: 'https://www.linkedin.com/in/adelsanaa'
-        },
-        {
-          name: 'Pierre Marsanne',
-          job: "Co-fondateur de l'agence THRIVE",
-          img: '/pierre-marsanne.png',
-          text: "Je travail avec Théo depuis presque deux ans sur différents projets web (Wordpress et Prestashop en particulier). Théo est un développeur sérieux, organisé et tellement passionné par l'informatique. Le rendu est toujours conforme à nos attentes et les délais sont généralement bien respectés. Théo s'est anticiper nos demandes et est toujours disponible pour échanger lorsque nous rencontrons une problématique dans un projet. C'est un réel plaisir de travailler ensemble. Je recommande vivement Théo pour son excellent investissement.",
-          link: "https://www.linkedin.com/in/pierre-marsanne-consultant-web/"
-        }]
+        testimonials: [
+          {
+            name: 'Adel Sanaa',
+            job: 'Creative Developer',
+            img: '/adel-sanaa.png',
+            text: 'Au travers de nos collaborations au sein de l’Agence THRIVE, sa pédagogie, son enthousiasme et son sérieux ont clairement su me marquer. Aucun doute, Théo m’a été un partenaire de travail sérieux et compréhensif.',
+            link: 'https://www.linkedin.com/in/adelsanaa'
+          },
+          {
+            name: 'Pierre Marsanne',
+            job: "Co-fondateur de l'agence THRIVE",
+            img: '/pierre-marsanne.png',
+            text: "Je travail avec Théo depuis presque deux ans sur différents projets web (Wordpress et Prestashop en particulier). Théo est un développeur sérieux, organisé et tellement passionné par l'informatique. Le rendu est toujours conforme à nos attentes et les délais sont généralement bien respectés. Théo s'est anticiper nos demandes et est toujours disponible pour échanger lorsque nous rencontrons une problématique dans un projet. C'est un réel plaisir de travailler ensemble. Je recommande vivement Théo pour son excellent investissement.",
+            link: "https://www.linkedin.com/in/pierre-marsanne-consultant-web/"
+          },
+          {
+            name: 'Ugo Philippe',
+            job: "Co-fondateur de l'agence THRIVE",
+            img: '/ugo-philippe.jpeg',
+            text: "Je suis en collaboration avec Théo depuis 1 an et je suis très surpris par sa maturité et son investissement au quotidien. Un excellent profil que je recommande.",
+          }
+        ]
       }
     },
 
