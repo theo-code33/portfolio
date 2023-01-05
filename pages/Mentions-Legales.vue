@@ -421,3 +421,23 @@
     En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Bordeaux
     </p>
 </template> -->
+
+<script>
+export default {
+    name: 'MentionsLegales',
+    head(){
+        return{
+            title: 'Mentions Légales - Théo Gillet - Développeur Front-End',
+            meta: [
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                { name: 'format-detection', content: 'telephone=no' },
+                { hid: 'robots', name: 'robots', content: 'noindex, nofollow' }
+            ],
+            link: [
+                { rel: 'icon', type: 'image/x-icon', href: '/memoji.png' }
+            ]
+        }
+    }
+}
+</script>
