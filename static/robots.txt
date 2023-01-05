@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /js/*
+Disallow: /_nuxt/*
+Disallow: /mentions-legales
+Allow: /
+Allow: /projets
+Allow: /contact
+
+Sitemap: https://portfolio.theogillet.fr/site-map.xml
