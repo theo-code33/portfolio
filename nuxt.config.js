@@ -76,6 +76,13 @@ export default {
         priority: 0.5,
         lastMod: '2023-01-02'
       }
+    ],
+    exclude: [
+      '/Projets',
+      '/Contact',
+      '/Mentions-Legales',
+      '/mentions-legales',
+      '/_nuxt/**',
     ]
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

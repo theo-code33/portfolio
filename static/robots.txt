@@ -1,7 +1,10 @@
 User-agent: *
-Disallow: /js/*
-Disallow: /_nuxt/*
+Disallow: /js/**
+Disallow: /_nuxt/**
 Disallow: /mentions-legales
+Disallow: /Mentions-Legales
+Allow: /Projets
+Allow: /Contact
 Allow: /
 Allow: /projets
 Allow: /contact
