@@ -137,6 +137,14 @@ export default {
       }
       .swiper{
         width: calc(100% - 40px);
+        .swiper-wrapper{
+          .swiper-slide{
+            height: auto !important;
+            .slider-content‘{
+              height: auto;
+            }
+          }
+        }
       }
     }
   }

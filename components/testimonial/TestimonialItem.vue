@@ -85,6 +85,7 @@ export default {
 }
 @media all and (max-width: 767px) {
     .testimonial-item{
+        height: max-content;
         padding: 30px 30px;
     }
 }
