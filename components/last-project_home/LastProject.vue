@@ -9,9 +9,9 @@
             />
         </div>
         <div class="right-side">
-            <ProjectItem :title="'Orchestre Parfum'" :tags="['Prestashop','PHP','Smarty','HTML','SCSS','Javascript']" :link="'/projets#1'" :image="'/mockup-ochestre-parfum.png'"/>
-            <ProjectItem class="middle-item" :title="'Thalia Patrimoine'" :tags="['Wordpress','PHP','Javascript','HTML','CSS','Swiper JS']" :link="'/projets#2'" :image="'/mockup-thalia-patrimoine.png'" />
-            <ProjectItem :title="'Mon Portfolio'" :tags="['Vue JS','Javascript','HTML','SCSS','GSAP', 'Swiper JS']" :link="'/projets#3'" :image="'/mockup-portfolio.png'" />
+            <ProjectItem :title="'Soviago'" :tags="['Wordpress','PHP','Javascript','HTML','CSS','Swiper JS']" :link="'/projets#5'" :image="'/mockup-soviago.png'" />
+            <ProjectItem class="middle-item" :title="'Adeimmo'" :tags="['Wordpress','PHP','Javascript','HTML','SCSS','Swiper JS']" :link="'/projets#4'" :image="'/mockup-adeimmo.png'" />
+            <ProjectItem :title="'Orchestre Parfum'" :tags="['Prestashop','PHP','Smarty','HTML','SCSS','Javascript']" :link="'/projets#3'" :image="'/mockup-ochestre-parfum.png'"/>
             <ProjectItem class="last-item" :title="'Voir les autres Projets'" :link="'/projets'" />
         </div>
     </section>

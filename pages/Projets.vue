@@ -24,7 +24,33 @@ export default {
         return{
             projects: [
                 {
-                    id: 1,
+                    id: 5,
+                    title: 'Soviago',
+                    tags: ['Wordpress','PHP','Javascript','HTML','SCSS','Swiper JS'],
+                    image: '/mockup-soviago.png',
+                    description: 'Soviago, c’est LE fournisseur majeur de viandes du Sud Ouest. Réalisé avec Wordpress, ce site vitrine est entièrement modifiable à la guise du client. Il permet de mettre en avant les différents produits proposés par l\'entreprise. Son petit plus ? La carte intéractive permettant de visualiser les différents points de vente de l\'entreprise.',
+                    lastSentence: 'Alors ? Ça vous a mis l\'eau à la bouche ?',
+                    collaboration: {
+                        name: 'Agence THRIVE',
+                        link: 'https://agencethrive.fr/'
+                    },
+                    link: 'https://soviago.com/'
+                },
+                {
+                    id: 4,
+                    title: 'Adeimmo',
+                    tags: ['Wordpress','PHP','Javascript','HTML','SCSS','Swiper JS'],
+                    image: '/mockup-adeimmo.png',
+                    description: 'Adeimmo, c’est le site du constructeur immobilier situé à Bordeaux. Réalisé avec Wordpress, ce site vitrine reflète parfaitement le style épuré de l\'entreprise. Son petit plus ? C\est la carte intéractive permettant de visualiser les différents commerces, services et lieux scolaires à proximité des programmes immobiliers',
+                    lastSentence: 'C\'est le moment de vous lancer dans l\'achat d\'un bien immobilier !',
+                    collaboration: {
+                        name: 'Agence THRIVE',
+                        link: 'https://agencethrive.fr/'
+                    },
+                    link: 'https://adeimmo.fr/'
+                },
+                {
+                    id: 3,
                     title: 'Orchestre Parfum',
                     tags: ['Prestashop','PHP','Smarty','HTML','SCSS','Javascript'],
                     image: '/mockup-ochestre-parfum.png',
@@ -52,7 +78,7 @@ export default {
 
                 },
                 {
-                    id: 3,
+                    id: 1,
                     title: 'Mon Portfolio',
                     tags: ['Vue JS','Javascript','HTML','SCSS','GSAP', 'Swiper JS'],
                     image: '/mockup-portfolio.png',
