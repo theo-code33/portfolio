@@ -9,9 +9,9 @@
             />
         </div>
         <div class="right-side">
-            <ProjectItem :title="'Soviago'" :tags="['Wordpress','PHP','Javascript','HTML','CSS','Swiper JS']" :link="'/projets#5'" :image="'/mockup-soviago.png'" />
-            <ProjectItem class="middle-item" :title="'Adeimmo'" :tags="['Wordpress','PHP','Javascript','HTML','SCSS','Swiper JS']" :link="'/projets#4'" :image="'/mockup-adeimmo.png'" />
-            <ProjectItem :title="'Orchestre Parfum'" :tags="['Prestashop','PHP','Smarty','HTML','SCSS','Javascript']" :link="'/projets#3'" :image="'/mockup-ochestre-parfum.png'"/>
+            <ProjectItem :title="'Babyfoot app'" :tags="['React','Javascript','SCSS', 'MUI', 'Firebase']" :link="'/projets#6'" :image="'/mockup-babyfoot-app.png'" />
+            <ProjectItem class="middle-item" :title="'Soviago'" :tags="['Wordpress','PHP','Javascript','HTML','CSS','Swiper JS']" :link="'/projets#5'" :image="'/mockup-soviago.png'" />
+            <ProjectItem :title="'Adeimmo'" :tags="['Wordpress','PHP','Javascript','HTML','SCSS','Swiper JS']" :link="'/projets#4'" :image="'/mockup-adeimmo.png'" />
             <ProjectItem class="last-item" :title="'Voir les autres Projets'" :link="'/projets'" />
         </div>
     </section>

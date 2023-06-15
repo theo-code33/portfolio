@@ -2,7 +2,7 @@
     <section id="projets">
         <Header :title-main="'Mes Projets'" :title-stroke="''" :img="'/memoji.png'" :alt="'Memoji qui travaille'"/>
         <section class="content-project">
-            <ProjectItem v-for="project in projects" :key="project.id" :id="project.id" :title="project.title" :tags="project.tags" :image="project.image" :description="project.description" :lastSentence="project.lastSentence" :collaboration="project.collaboration" :link="project.link"/>
+            <ProjectItem v-for="project in projects" :key="project.id" :id="project.id" :title="project.title" :tags="project.tags" :image="project.image" :description="project.description" :lastSentence="project.lastSentence" :collaboration="project.collaboration" :link="project.link" :isApp="project.isApp"/>
         </section>
         <Footer />
     </section>
@@ -23,6 +23,16 @@ export default {
     data(){
         return{
             projects: [
+                {
+                    id: 6,
+                    title: 'Babyfoot App',
+                    tags: ['React','Javascript','SCSS', "MUI", "Firebase"],
+                    image: "/mockup-babyfoot-app.png",
+                    description: 'Babyfoot app, c\'est l\'application des joueurs de babyfoot. Elle permet de comptabiliser les scores de vos parties et de visualiser vos statistiques. Son plus ? Elle est disponible sur mobile et sur tablette !',
+                    lastSentence: 'Donne ton maximum et fais exploser tes statistiques !',
+                    link: 'https://babyfoot-app-prod.web.app/',
+                    isApp: true
+                },
                 {
                     id: 5,
                     title: 'Soviago',

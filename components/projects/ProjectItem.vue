@@ -9,7 +9,7 @@
                 <span class="collaboration" v-if="collaboration">Réalisé en collaboration avec <a :href="collaboration.link">{{ collaboration.name }}</a></span>
                 <p>{{ description }}</p>
                 <p class="last-sentence">{{ lastSentence }}</p>
-                <a class="link-website" :href="link" target="_blank">Visiter le site</a>
+                <a class="link-website" :href="link" target="_blank">Visiter {{ isApp ? "l'application" : "le site" }}</a>
             </div>
             <div class="right-side">
                 <a :href="link" target="_blank">
@@ -56,6 +56,10 @@ export default {
         link: {
             type: String,
             required: true
+        },
+        isApp: {
+            type: String,
+            required: false
         }
     }
 }
