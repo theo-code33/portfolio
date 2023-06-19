@@ -4,7 +4,7 @@
             <h2>Qui suis-je ?</h2>
             <p>
                 Hello. Moi, c’est Théo ! Une petite présentation s’impose non ?
-                Pour faire court, je suis développeur web front end, mais je tends à devenir full Stack JavaScript. Vous êtes au bon endroit si
+                Pour faire court, je suis développeur Fullstack Javascript. Vous êtes au bon endroit si
                 vous cherchez quelqu’un pour créer le site de vos rêves. Vous demandez, je réalise !
                 <br/>
                 <br/>

@@ -58,7 +58,7 @@ export default {
         },
         titleStroke: {
             type: String,
-            default: 'front-end junior'
+            default: 'fullstack junior'
         },
         img: {
             type: String,
