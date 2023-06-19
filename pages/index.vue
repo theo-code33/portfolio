@@ -4,6 +4,7 @@
     <Who/>
     <Technologies/>
     <LastProject/>
+    <GithubProject/>
     <Testimonials/>
     <Footer/>
   </section>
@@ -16,6 +17,7 @@ import Technologies from '../components/technologies_home/Technologies.vue'
 import LastProject from '../components/last-project_home/LastProject.vue'
 import Footer from '~/components/Footer.vue'
 import Testimonials from '~/components/testimonial/Testimonials.vue'
+import GithubProject from '~/components/github-project/GithubProject.vue'
 
 export default {
   name: 'IndexPage',
@@ -24,6 +26,7 @@ export default {
     Who,
     Technologies,
     LastProject,
+    GithubProject,
     Footer,
     Testimonials
   }
