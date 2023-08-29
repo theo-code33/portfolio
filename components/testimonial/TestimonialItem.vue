@@ -48,7 +48,6 @@ export default {
             width: 75px;
             height: 75px;
             border-radius: 75px;
-            background-color: red;
             display: block;
             margin-right: 20px;
             object-fit: cover;
