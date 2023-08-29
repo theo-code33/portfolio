@@ -1,10 +1,13 @@
-# portfolio
+# Portfolio
 
 ## Build Setup
 
 ```bash
 # install dependencies
 $ npm install
+
+# use the good version of node
+$ nvm install 16
 
 # serve with hot reload at localhost:3000
 $ npm run dev
@@ -40,7 +43,6 @@ More information about the usage of this directory in [the documentation](https:
 Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
 
 ### `pages`
 
