@@ -46,6 +46,12 @@ export default {
             job: "Co-fondateur de l'agence THRIVE",
             img: '/ugo-philippe.jpeg',
             text: "Je suis en collaboration avec Théo depuis 1 an et je suis très surpris par sa maturité et son investissement au quotidien. Un excellent profil que je recommande.",
+          },
+          {
+            name: 'Frédéric Labourel',
+            job: "Développeur Web responsable WORDPRESS",
+            img: '/frederic-LABOUREL.jpg',
+            text: "J'ai collaboré avec Theo sur des projets wordpress pour lesquels il fut particulièrement efficace notamment en fonctionnalités back et connexions à des API. Il est passionné par ce qu'il entreprend et va au bout des difficultés. Mais il sait également être à l'écoute et demander de l'aide au besoin car il garde toujours le soucis de l'objectif et de l'efficacité. Bref un collaborateur de grande valeur.",
           }
         ]
       }
@@ -98,6 +104,7 @@ export default {
       overflow: visible;
       .swiper-wrapper{
           align-items: stretch !important;
+          height: inherit !important;
 
           .swiper-slide{
             height: 100% !important;
