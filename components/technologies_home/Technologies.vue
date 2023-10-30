@@ -93,7 +93,7 @@ export default {
             margin: 0;
             color: rgba($color: #000, $alpha: 0.6);
             font-weight: lighter;
-            width: 40%;
+            width: 45%;
             line-height: 30px;
         }
         ul{
