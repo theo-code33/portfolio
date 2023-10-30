@@ -56,9 +56,9 @@ export default {
 <style lang="scss">
     .project-item-container{
         width: 100%;
-        height: 125px;
         border-bottom: 1px solid #C7D0D9;
         cursor: pointer;
+        padding: 0 0 20px;
 
         .img-hover{
             width: 300px;
