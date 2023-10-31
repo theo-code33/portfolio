@@ -86,7 +86,7 @@ footer{
 
     .contact-footer{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         margin-bottom: 60px;
         &-img{
@@ -102,7 +102,8 @@ footer{
             font-family: 'Mundial', sans-serif;
             p{
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
                 color: #fff;
                 font-size: 60px;
                 font-weight: 600;
@@ -110,14 +111,14 @@ footer{
                 a{
                     display: flex;
                     align-items: center;
-                    margin-left: 10px;
                     color: #fff;
                     text-decoration: none;
                         transition: all 0.3s ease;
                     svg {
                         transition: all 0.3s ease;
                         margin-left: 10px;
-                        margin-top: 10%;
+                        width: 150px;
+                        height: 70px;
                     }
                     .text{
                         position: relative;
@@ -311,7 +312,6 @@ footer{
                     svg{
                         font-size: 40px !important;
                         height: 100px;
-                        margin-top: 25px !important;
                     }
                 }
             }

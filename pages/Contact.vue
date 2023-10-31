@@ -69,6 +69,7 @@ export default {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1600px;
+    width: calc(100% - 140px);
     padding: 120px 0;
     font-family: "Mundial", sans-serif;
 
@@ -131,7 +132,7 @@ export default {
         }
     }
     .right-side{
-        width: 60%;
+        width: 65%;
         h2{
             font-size: 50px;
             margin-bottom: 50px;
