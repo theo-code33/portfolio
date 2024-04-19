@@ -52,6 +52,13 @@ export default {
             job: "Développeur Web responsable WORDPRESS",
             img: '/frederic-LABOUREL.jpg',
             text: "J'ai collaboré avec Theo sur des projets wordpress pour lesquels il fut particulièrement efficace notamment en fonctionnalités back et connexions à des API. Il est passionné par ce qu'il entreprend et va au bout des difficultés. Mais il sait également être à l'écoute et demander de l'aide au besoin car il garde toujours le soucis de l'objectif et de l'efficacité. Bref un collaborateur de grande valeur.",
+          },
+          {
+            name: 'Stanislav Bedyak',
+            job: "Graphiste - Designer",
+            img: '/stanislav-bedyak.webp',
+            text: "Excellent professionnel ! 👍🏼 J’ai eu l’occasion de travailler à ses côtés et je peux vous dire que Théo fait de son mieux pour satisfaire ses clients, à n’en pas compter ses heures !",
+            link: "https://bedyak.fr/"
           }
         ]
       }
@@ -104,10 +111,8 @@ export default {
       overflow: visible;
       .swiper-wrapper{
           align-items: stretch !important;
-          height: inherit !important;
 
           .swiper-slide{
-            height: 100% !important;
 
             .slider-content{
               height: 100%;
